@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+        <ion-nav-buttons side="left">
+            <a class="button" href="index.html">
+                Back
+            </a>
+            <h1 class="title">Demo tabs</h1>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+         <div class="tabs tabs-icon-top">
+            <a class="tab-item">
+              <i class="icon ion-home"></i>
+              Home
+            </a>
+            <a class="tab-item">
+              <i class="icon ion-ios-mic"></i>
+              Register
+            </a>
+            <a class="tab-item">
+              <i class="icon ion-gear-b"></i>
+              Settings
+            </a>
+         </div>
+         <ion-content class="has-header">
+           <div class="list">
+             <div>
+               <a class="item item-icon-left item-icon-right" href="#">
+                  <i class="icon ion-chatbubble-working"></i>
+                  Call Me
+                  <i class="icon ion-ios-telephone-outline"></i>
+               </a>
+            </div>   
+             <div class="item item-input-inset">
+               <label class="item-input-wrapper">
+                 <input type="text" placeholder="Email">
+               </label>
+               <button class="button button-small">
+                 Invia
+               </button>
+            </div>
+            <div>
+              <ul class="list">
+                 <li class="item item-toggle">
+                   Test toggle
+                   <label class="toggle toggle-assertive">
+                     <input type="checkbox">
+                     <div class="track">
+                       <div class="handle"></div>
+                     </div>
+                   </label>
+                </li>
+                <li class="item item-checkbox">
+                     <label class="checkbox">
+                       <input type="checkbox">
+                     </label>
+                     Checkbox
+                  </li>
+                    <li class="item range range-positive">
+                      <i class="icon ion-ios-sunny-outline"></i>
+                      <input type="range" name="volume" min="0" max="100" value="33">
+                      <i class="icon ion-ios-sunny"></i>
+                  </li>
+                  <li class="list">
+                    <label class="item item-input item-select">
+                      <div class="input-label">
+                        Test item
+                      </div>
+                      <select>
+                        <option>Test 1</option>
+                        <option selected>Test 2</option>
+                        <option>Test 3</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li>
+                     <div class="row">
+                     <div class="col">col 1</div>
+                     <div class="col">col 2</div>
+                     <div class="col">col 3</div>
+                     <div class="col">col 4</div>
+                     <div class="col">col 5</div>
+                  </div>
+                </li>
+              </ul>
+           </div>
+        </label>
+        </ion-content>
+     </body>
+  </html>
